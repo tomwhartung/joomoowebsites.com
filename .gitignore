@@ -1,0 +1,32 @@
+#
+#  Documentation is here: http://git-scm.com/docs/gitignore
+#  --------------------------------------------------------
+#
+#
+# DO NOT CHECK IN CONFIG FILES
+# ----------------------------
+gitignored/Site/RCS
+gitignored/Site/joomoowebsites_config.py
+
+#
+# We don't want to check in these cache files:
+#
+__pycache__
+
+#
+# Directory names I like to use for temporary files
+#
+downloads/
+tmp/
+unpack/
+unzip/
+
+#
+#  Ignore netbeans work area and vim temporary files
+#
+/nbproject/
+*.swp
+.~lock.*
+.*~
+*~
+
