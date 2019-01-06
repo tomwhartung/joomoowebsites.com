@@ -23,7 +23,31 @@ def home():
 
     """ Render the home.html template """
 
-    return render_template('home.html')
+    return render_template('home.html', home_active='is-active')
+
+
+@app.route('/about')
+def about():
+
+    """ Render the about.html template """
+
+    return render_template('about.html', about_active='is-active')
+
+
+@app.route('/blog')
+def blog():
+
+    """ Render the blog.html template """
+
+    return render_template('blog.html', blog_active='is-active')
+
+
+@app.route('/portfolio')
+def portfolio():
+
+    """ Render the portfolio.html template """
+
+    return render_template('portfolio.html', portfolio_active='is-active')
 
 
 @app.route('/index')
