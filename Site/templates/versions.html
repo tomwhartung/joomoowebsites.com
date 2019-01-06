@@ -9,43 +9,39 @@
 {% block title %}Versions {% endblock %}
 
 {% block content %}
-<main class="mt-5 mb-5">
- <div class="container mt-5 mb-5">
-  <div class="row justify-content-center">
-   <div class="z-depth-1-half m-5 p-5">
-    <div class="col-sm-12">
-     <h1 class="center">Versions</h1>
-     <p>
-      Versions
-     </p>
-     <ul class="list-group mb-3">
-      <li class="list-group-item">
-       Flask: {{ flask_version }}
-      </li>
-      <li class="list-group-item">
-       Python: {{ python_version }}
-      </li>
-     </ul>
-     <p>
-      <u>Command line &ndash; flask:</u><br>
-      python3 -c "import flask; print(flask.__version__)"
-     </p>
-     <p>
-      <u>Command line &ndash; python:</u><sup>*</sup><br>
-      which python3<br>
-      python3 --version<br>
-      python3 -V<br>
-      which python<br>
-      python -V<br>
-      python --version<br>
-     </p>
-     <p>
-      * Be careful changing the system version, applications may be dependent on it.
-     </p>
-     <hr>
-    </div><!-- .col -->
-   </div><!-- .z-depth-1-half -->
-  </div><!-- .row -->
- </div><!-- .container -->
-</main>
+ <div class="mdl-grid portfolio-max-width">
+  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+   <div class="mdl-card__title">
+    <h2 class="mdl-card__title-text">Versions</h2>
+   </div>
+   <p class="mdl-card__supporting-text">
+    Versions
+   </p>
+   <ul class="list-group mb-3">
+    <li class="list-group-item">
+     Flask: {{ flask_version }}
+    </li>
+    <li class="list-group-item">
+     Python: {{ python_version }}
+    </li>
+   </ul>
+   <p class="mdl-card__supporting-text">
+    <u>Command line &ndash; flask:</u><br>
+    python3 -c "import flask; print(flask.__version__)"
+   </p>
+   <p class="mdl-card__supporting-text">
+    <u>Command line &ndash; python:</u><sup>*</sup><br>
+    which python3<br>
+    python3 --version<br>
+    python3 -V<br>
+    which python<br>
+    python -V<br>
+    python --version<br>
+   </p>
+   <p class="mdl-card__supporting-text">
+    * Be careful changing the system version, applications may be dependent on it.
+   </p>
+   <hr>
+  </div><!-- .mdl-cell -->
+ </div><!-- .mdl-grid -->
 {% endblock %}
