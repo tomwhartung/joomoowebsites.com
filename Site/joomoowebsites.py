@@ -26,6 +26,14 @@ def home():
     return render_template('home.html')
 
 
+@app.route('/index')
+def index():
+
+    """ Render the index.html template """
+
+    return render_template('index.html')
+
+
 @app.route('/v')
 def versions():
     """ Show the versions.html template to see what versions we are using """
