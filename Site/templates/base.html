@@ -24,7 +24,8 @@
     <div class="mdl-layout__header-row portfolio-logo-row">
      <span class="mdl-layout__title">
       <div class="portfolio-logo"></div>
-      <span class="mdl-layout__title">Simple portfolio website</span>
+      <span class="mdl-layout__title italic">
+       Your Alternative to WordPress</span>
      </span>
     </div>
     <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
@@ -39,6 +40,8 @@
          href="/blog">Blog</a>
       <a class="mdl-navigation__link" target="_blank"
          href="https://Groja.com/conversion/tomwhartung">Contact</a>
+      <a class="mdl-navigation__link {{ legal_active }}"
+         href="/legal/terms_of_service">Terms</a>
      </nav>
     </div>
    </header>
@@ -54,6 +57,8 @@
         href="/blog">Blog</a>
      <a class="mdl-navigation__link" target="_blank"
         href="https://Groja.com/conversion/tomwhartung">Contact</a>
+     <a class="mdl-navigation__link {{ legal_active }}"
+        href="/legal/terms_of_service">Terms</a>
     </nav>
    </div>
   {% endblock %}
@@ -63,15 +68,30 @@
    {% block remainder %}
    {% endblock %}
    {% block footer %}
-    <footer class="mdl-mini-footer">
+    <footer class="mdl-mini-footer jmws-footer">
      <div class="mdl-mini-footer__left-section">
-      <div class="mdl-logo">Simple portfolio website</div>
+      <div class="mdl-logo jmws-footer">
+       All Rights Reserved.
+       Copyright &copy; 2016&ndash;2018
+        <a href="http://www.TomWHartung.com" class="footer"
+           title="TomWHartung.com home page" target="_blank">
+         Tom W. Hartung</a>
+        and
+        <a href="/" class="footer"
+           title="JooMoo WebSites.com home page" target="_blank">
+         JooMoo WebSites LLC</a>.
+      </div>
      </div>
      <div class="mdl-mini-footer__right-section">
-      <ul class="mdl-mini-footer__link-list">
-       <li><a href="#">Help</a></li>
-       <li><a href="#">Privacy & Terms</a></li>
-      </ul>
+      <div class="mdl-logo">
+      <b>Your use of this site implies you consent to our
+       <a href="/legal/terms_of_service" class="footer"
+          title="Terms of Service for this site" target="_blank">
+        Terms of Service</a> and
+       <a href="/legal/privacy_policy" class="footer"
+          title="Privacy Policy for this site" target="_blank">
+        Privacy Policy</a>.</b>
+      </div>
      </div>
     </footer>
    {% endblock %}
