@@ -1,6 +1,6 @@
 .portfolio-header {
   position: relative;
-  background-image: url(/static/images/header-bg.jpg);
+  /* background-image: url(/static/images/header-bg.jpg); */
 }
 
 .portfolio-header .mdl-layout__header-row {
@@ -29,16 +29,16 @@
 }
 
 .portfolio-logo {
-  background: url(/static/images/logo.png) 50% no-repeat;
+  background: url(/static/images/logo-jmws-joomoowebsites.com-1-white-italic.png) 50% no-repeat;
   background-size: cover;
   height: 150px;
-  width: 150px;
+  width: 400px;
   margin: auto auto 10px;
 }
 
 .is-compact .portfolio-logo {
   height: 50px;
-  width: 50px;
+  width: 133px;
   margin-top: 7px;
 }
 
@@ -164,7 +164,7 @@ img.article-image {
 }
 
 footer {
-  background-image: url(/static/images/footer-bg.png);
-  background-size: cover;
+  /* background-image: url(/static/images/footer-bg.png); */
+  /* background-size: cover; */
 }
 
