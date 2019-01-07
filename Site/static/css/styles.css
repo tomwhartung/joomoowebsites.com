@@ -168,3 +168,53 @@ footer {
   /* background-size: cover; */
 }
 
+/*
+ * --------------------
+ *  My CusTOMizations:
+ * --------------------
+ */
+.jmws-about-card,
+.jmws-blog-card,
+.jmws-portfolio-card,
+.jmws-index-card,
+.jmws-legal-card,
+.jmws-versions-card {
+  padding: 3em;
+}
+
+footer.jmws-footer {
+  background-color: #1565C0;
+}
+a.footer {
+  color: #E3F2FD;
+}
+
+/*
+ * Sematic classes:
+ */
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+.underline {
+  text-decoration: underline;
+}
+
+/*
+ * Very disappointed in MDL lists.  They work ok for short list items
+ * but are very messed up if the list item is long and contains links,
+ * like many of mine on the legal pages.
+ */
+ul.toms-collection {
+  list-style-type: none;
+  margin-left: -2.5em;
+}
+ul li.toms-collection-item {
+  border-bottom: .1em solid lightgrey;
+}
+ul li.toms-collection-item:first-child {
+  border-top: .1em solid lightgrey;
+}
+
