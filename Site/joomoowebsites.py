@@ -50,6 +50,23 @@ def portfolio():
     return render_template('portfolio.html', portfolio_active='is-active')
 
 
+@app.route("/legal/<legal_page>")
+def legal(legal_page):
+
+    """ Display the requested legal page, defaulting to the terms_of_service """
+
+    if legal_page == 'privacy_policy':
+        template_name = 'legal/privacy_policy.html'
+    elif legal_page == 'terms_of_service':
+        template_name = 'legal/terms_of_service.html'
+    elif legal_page == 'affiliate_marketing_disclosure':
+        template_name = 'legal/affiliate_marketing_disclosure.html'
+    else:
+        template_name = 'legal/terms_of_service.html'
+
+    return render_template(template_name, legal_active='active')
+
+
 @app.route('/index')
 def index():
 
@@ -94,4 +111,3 @@ def page_not_found(e):
 #
 if __name__ == '__main__':
     app.run(debug=True)
-
