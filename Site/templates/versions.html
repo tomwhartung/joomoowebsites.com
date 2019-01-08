@@ -10,18 +10,18 @@
 
 {% block content %}
  <div class="mdl-grid portfolio-max-width">
-  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+  <div class="mdl-cell mdl-cell--8-col mdl-card mdl-shadow--4dp jmws-versions-card">
    <div class="mdl-card__title">
     <h2 class="mdl-card__title-text">Versions</h2>
    </div>
    <p class="mdl-card__supporting-text">
     Versions
    </p>
-   <ul class="list-group mb-3">
-    <li class="list-group-item">
+   <ul class="mdl-list">
+    <li class="mdl-list__item">
      Flask: {{ flask_version }}
     </li>
-    <li class="list-group-item">
+    <li class="mdl-list__item">
      Python: {{ python_version }}
     </li>
    </ul>
