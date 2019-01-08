@@ -10,7 +10,7 @@
   <title>{% block title %}{% endblock %}</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/material.blue-red.min.css') }}" />
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/joomoowebsites.css') }}" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="{{ url_for('static', filename='favicon.ico') }}"
         rel="shortcut icon" type="image/x-icon">
@@ -25,39 +25,51 @@
      <span class="mdl-layout__title">
       <div class="portfolio-logo"></div>
       <span class="mdl-layout__title italic">
-       Your Alternative to WordPress</span>
+       Your WordPress Alternative</span>
      </span>
     </div>
     <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
      <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
       <a class="mdl-navigation__link {{ home_active }}"
+         title="Go to the Home page on this site"
          href="/home">Home</a>
       <a class="mdl-navigation__link {{ portfolio_active }}"
+         title="See a portfolio of sites built by JooMooWebSites.com"
          href="/portfolio">Portfolio</a>
       <a class="mdl-navigation__link {{ about_active }}"
+         title="Learn about the types of sites built by JooMooWebSites.com"
          href="/about">About</a>
-      <a class="mdl-navigation__link {{ blog_active }}"
-         href="/blog">Blog</a>
       <a class="mdl-navigation__link" target="_blank"
+         title="Open a new window containing the blog of the site creator"
+         href="https://TomWHartung.com">Blog</a>
+      <a class="mdl-navigation__link" target="_blank"
+         title="Open a new window to contact the founder of JooMooWebSites.com"
          href="https://Groja.com/conversion/tomwhartung">Contact</a>
       <a class="mdl-navigation__link {{ legal_active }}"
+         title="Read the Terms of Service for this site"
          href="/legal/terms_of_service">Terms</a>
      </nav>
     </div>
    </header>
    <div class="mdl-layout__drawer mdl-layout--small-screen-only">
     <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-     <a class="mdl-navigation__link is-active"
+     <a class="mdl-navigation__link {{ home_active }}"
+        title="Go to the Home page on this site"
         href="/">Home</a>
-     <a class="mdl-navigation__link"
+     <a class="mdl-navigation__link {{ portfolio_active }}"
+        title="See a portfolio of sites built by JooMooWebSites.com"
         href="/portfolio">Portfolio</a>
-     <a class="mdl-navigation__link"
+     <a class="mdl-navigation__link {{ about_active }}"
+        title="Learn about the types of sites built by JooMooWebSites.com"
         href="/about">About</a>
-     <a class="mdl-navigation__link"
-        href="/blog">Blog</a>
      <a class="mdl-navigation__link" target="_blank"
+        title="Open a new window containing the blog of the site creator"
+        href="https://TomWHartung.com">Blog</a>
+     <a class="mdl-navigation__link" target="_blank"
+        title="Open a new window to contact the founder of JooMooWebSites.com"
         href="https://Groja.com/conversion/tomwhartung">Contact</a>
      <a class="mdl-navigation__link {{ legal_active }}"
+        title="Read the Terms of Service for this site"
         href="/legal/terms_of_service">Terms</a>
     </nav>
    </div>
@@ -72,7 +84,7 @@
      <div class="mdl-mini-footer__left-section">
       <div class="mdl-logo jmws-footer">
        All Rights Reserved.
-       Copyright &copy; 2016&ndash;2018
+       Copyright &copy; 2016&ndash;2019
         <a href="http://www.TomWHartung.com" class="footer"
            title="TomWHartung.com home page" target="_blank">
          Tom W. Hartung</a>
