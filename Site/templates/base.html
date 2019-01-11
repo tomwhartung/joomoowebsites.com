@@ -8,6 +8,7 @@
         content="JooMoo Websites LLC specializes in using python and material design to build minimalist sites.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <title>{% block title %}{% endblock %}</title>
+
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
   <link rel="stylesheet" href="{{ url_for('static', filename='css/material.blue-red.min.css') }}" />
   <link rel="stylesheet" href="{{ url_for('static', filename='css/joomoowebsites.css') }}" />
@@ -18,8 +19,8 @@
 </head>
 
 <body>
- <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  {% block navbar %}
+ {% block layout %}
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
    <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
     <div class="mdl-layout__header-row portfolio-logo-row">
      <span class="mdl-layout__title">
@@ -73,7 +74,6 @@
         href="/legal/terms_of_service">Terms</a>
     </nav>
    </div>
-  {% endblock %}
   <main class="mdl-layout__content">
    {% block content %}
    {% endblock %}
@@ -109,6 +109,7 @@
    {% endblock %}
   </main>
  </div><!-- .mdl-layout -->
+{% endblock %}
 
  <!-- SCRIPTS -->
  {% block scripts %}
