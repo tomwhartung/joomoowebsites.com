@@ -20,9 +20,18 @@
 {% endblock %}
 
 {% block layout %}
-<div class="demo-blog mdl-layout mdl-js-layout has-drawer is-upgraded">
+ <div class="demo-blog mdl-layout mdl-js-layout has-drawer is-upgraded">
   <main class="mdl-layout__content">
-    <div class="demo-blog__posts mdl-grid">
+   <div class="demo-blog__posts mdl-grid">
+    <div class="mdl-card amazing mdl-cell mdl-cell--12-col">
+     <div class="mdl-card__title mdl-color-text--grey-50">
+      <h3 class="quote"><a href="/about">JooMoo WebSites: Minimalistic, Elegant, and Easily-Extendable</a></h3>
+     </div>
+     <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+       Built using Python and Material Design, our sites are simple and elegant,
+        yet easy to extend.
+     </div>
+    </div>
       <div class="mdl-card coffee-pic mdl-cell mdl-cell--8-col">
         <div class="mdl-card__media mdl-color-text--grey-50">
           <h3><a href="entry.html">Coffee Pic</a></h3>
@@ -114,29 +123,36 @@
           </button>
         </a>
       </nav>
-    </div>
-    <footer class="mdl-mini-footer">
-      <div class="mdl-mini-footer--left-section">
-        <button class="mdl-mini-footer--social-btn social-btn social-btn__twitter">
-          <span class="visuallyhidden">Twitter</span>
-        </button>
-        <button class="mdl-mini-footer--social-btn social-btn social-btn__blogger">
-          <span class="visuallyhidden">Facebook</span>
-        </button>
-        <button class="mdl-mini-footer--social-btn social-btn social-btn__gplus">
-          <span class="visuallyhidden">Google Plus</span>
-        </button>
+   </div><!-- .mdl-grid -->
+   <footer class="mdl-mini-footer">
+     <div class="mdl-mini-footer--left-section">
+      <div class="mdl-logo jmws-footer-home">
+       All Rights Reserved.
+       Copyright &copy; 2016&ndash;2019
+        <a href="http://www.TomWHartung.com" class="footer-home"
+           title="TomWHartung.com home page" target="_blank">
+         Tom W. Hartung</a>
+        and
+        <a href="/" class="footer-home"
+           title="JooMoo WebSites.com home page" target="_blank">
+         JooMoo WebSites LLC</a>.
       </div>
-      <div class="mdl-mini-footer--right-section">
-        <button class="mdl-mini-footer--social-btn social-btn__share">
-          <i class="material-icons" role="presentation">share</i>
-          <span class="visuallyhidden">share</span>
-        </button>
+     </div>
+     <div class="mdl-mini-footer__right-section">
+      <div class="mdl-logo jmws-footer-home">
+      <b>Your use of this site implies you consent to our
+       <a href="/legal/terms_of_service" class="footer-home"
+          title="Terms of Service for this site" target="_blank">
+        Terms of Service</a> and
+       <a href="/legal/privacy_policy" class="footer-home"
+          title="Privacy Policy for this site" target="_blank">
+        Privacy Policy</a>.</b>
       </div>
-    </footer>
+     </div>
+   </footer>
   </main>
   <div class="mdl-layout__obfuscator"></div>
-</div><!-- .mdl-layout -->
+ </div><!-- .mdl-layout -->
 {% endblock %}
 
 {% block scripts %}
