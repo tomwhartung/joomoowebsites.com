@@ -46,24 +46,33 @@
       <a class="mdl-navigation__link" target="_blank"
          title="Open a new window to contact the founder of JooMooWebSites.com"
          href="https://Groja.com/conversion/tomwhartung">Contact</a>
-      <a class="mdl-navigation__link {{ legal_active }}"
-         title="Read the Terms of Service for this site"
-         href="/legal/terms_of_service">Terms</a>
-      <a id="menubtn" class="mdl-navigation__link mdl-button mdl-js-button">
-       Legal
+      <a class="mdl-navigation__link mdl-button mdl-js-button {{ legal_active }}"
+         id="menubtn" title="Read one of the legal documents for this site">
+       Legal&#x25BC;
         <span class="visuallyhidden">show menu</span>
       </a>
      </nav>
     </div>
    </header>
-   <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="menubtn">
+   <ul class="mdl-menu mdl-js-menu" for="menubtn">
      <li class="mdl-menu__item">
-      <a title="Read the Terms of Service for this site"
+      <a class="mdl-navigation__link"
+         title="Read the Terms of Service for this site"
          href="/legal/terms_of_service">
-        Terms of Service</a>
+       Terms of Service</a>
      </li>
-     <li class="mdl-menu__item">Privacy Policy</li>
-     <li class="mdl-menu__item">Disclosure</li>
+     <li class="mdl-menu__item">
+      <a class="mdl-navigation__link"
+         title="Read the Privacy Policy for this site"
+         href="/legal/privacy_policy">
+       Privacy Policy</a>
+     </li>
+     <li class="mdl-menu__item">
+      <a class="mdl-navigation__link"
+         title="Read the Disclosure for this site"
+         href="/legal/affiliate_marketing_disclosure">
+       Disclosure</a>
+     </li>
    </ul>
    <div class="mdl-layout__drawer mdl-layout--small-screen-only">
     <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
