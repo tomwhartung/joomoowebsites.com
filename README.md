@@ -16,6 +16,7 @@ Replacing the joomla site with flask.  Time to move on.
   - https://getmdl.io/started/index.html
   - Saved in this repo as `Downloads/mdl.zip`
   - Using **only** the following files from the .zip file:
+    - `material.css` as `static/css/material.1.3.0.css-for_reference_only`
     - `material.min.js` as `static/js/material.min.js`
     - `material.min.js.map` as `static/js/material.min.js.map`
     - `LICENSE` as `static/LICENSE-MDL.txt`
@@ -51,14 +52,12 @@ Inspired by code previously downloaded into the `always_learning_google_products
 Specific files used from `always_learning_google_products`:
 
 - `material_design/08-mdl/02-portfolio/Site/styles.css` as `css/styles.css`
+  - Later: renamed `css/styles.css` to `css/joomoowebsites.css`
+- `material_design/08-mdl/01-blog/Sitestyles.css` as `css/styles-home.css`
 
-**NOTE:** the paths for these files are defined in `styles.css` .
+**NOTE:**
 
-We will want to replace these at some point:
-
-- `material_design/08-mdl/02-portfolio/Site/images/logo.png` as `images/logo.png`
-- `material_design/08-mdl/02-portfolio/Site/images/header-bg.jpg` as `images/header-bg.jpg`
-- `material_design/08-mdl/02-portfolio/Site/images/footer-background.png` as `images/footer-bg.png`
+- The paths for image files are defined in `css/joomoowebsites.css`
 
 ## Process
 
@@ -75,8 +74,12 @@ Templates
 Having looked through the documentation, I am not seeing a way to do the
 following things, which are features that other MD libraries support:
 
-- Drop-down menu
+- Drop-down sub-menus
 - Centering text
+- Footer wants to have left and right sides, I want it centered and in the middle
+- Documentation is poor, e.g., does not have a list of colors
+  - For a list of colors, grep for `mdl-color-text-` in the css file
+  - Ref: https://stackoverflow.com/questions/36668356/is-there-a-html-class-for-changing-text-color-in-material-design-lite
 
 I could furnish css to do these things, but feel like I shouldn't have to.
 
