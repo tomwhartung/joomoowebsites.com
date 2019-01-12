@@ -5,8 +5,8 @@
 {% block content %}
  <div class="mdl-grid portfolio-max-width">
   <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp jmws-index-card">
-   <div class="mdl-card__title">
-    <h2 class="display-2">Portfolio</h2>
+   <div class="mdl-card__title jmws-center">
+    <h2>Portfolio</h2>
    </div>
    <div class="mdl-card__supporting-text">
     <p class="mdl-card__supporting-text">
@@ -29,17 +29,43 @@
           alt="Screen shot of the home page of ArtsyVisions.com">
     </a>
    </div>
-   <div class="mdl-card__title">
+   <div class="mdl-card__title jmws-center">
     <h2 class="mdl-card__title-text">ArtsyVisions.com</h2>
    </div>
    <div class="mdl-card__supporting-text">
     Django and Materialize
    </div>
-   <div class="mdl-card__actions mdl-card--border">
-    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent"
-       href="https://ArtsyVisions.com" target="_blank"
+   <div class="mdl-card__supporting-text">
+    <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+     <div class="mdl-tabs__tab-bar">
+      <a href="#avs-uses-panel" class="mdl-tabs__tab is-active">Uses</a>
+      <a href="#avs-details-panel" class="mdl-tabs__tab">Details</a>
+      <a href="#avs-notes-panel" class="mdl-tabs__tab">Notes</a>
+     </div>
+     <div class="mdl-tabs__panel is-active" id="avs-uses-panel">
+      <p>
+       Django and Materialize
+      </p>
+     </div>
+     <div class="mdl-tabs__panel" id="avs-details-panel">
+      <p>
+       Details
+      </p>
+     </div>
+     <div class="mdl-tabs__panel" id="avs-notes-panel">
+      <p>
+       Notes
+      </p>
+     </div>
+    </div>
+   </div>
+   <div class="mdl-card__supporting-text mdl-card__actions mdl-card--border jmws-center">
+    <a href="https://ArtsyVisions.com" target="_blank"
        title="Visit the home page of ArtsyVisions.com">
-     Visit Site</a>
+     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+      Visit Site
+     </button>
+    </a>
    </div>
   </div><!-- .mdl-cell -->
 
@@ -51,8 +77,9 @@
      <img class="article-image" border="0"
           src="{{ url_for('static', filename='images/portfolio/groja.com-1-scaled-1.png') }}"
           alt="Screen shot of the home page of seeourminds.com">
+    </a>
    </div>
-   <div class="mdl-card__title">
+   <div class="mdl-card__title jmws-center">
     <h2 class="mdl-card__title-text">Groja.com</h2>
    </div>
    <div class="mdl-card__supporting-text">
@@ -76,7 +103,7 @@
           alt="Screen shot of the home page of seeourminds.com">
     </a>
    </div>
-   <div class="mdl-card__title">
+   <div class="mdl-card__title jmws-center">
     <h2 class="mdl-card__title-text">SeeOurMinds.com</h2>
    </div>
    <div class="mdl-card__supporting-text">
@@ -100,7 +127,7 @@
           alt="Screen shot of the home page of tomwhartung.com">
     </a>
    </div>
-   <div class="mdl-card__title">
+   <div class="mdl-card__title jmws-center">
     <h2 class="mdl-card__title-text">TomWHartung.com</h2>
    </div>
    <div class="mdl-card__supporting-text">
@@ -124,11 +151,11 @@
           alt="Screen shot of the home page of tomhartung.com">
     </a>
    </div>
-   <div class="mdl-card__title">
+   <div class="mdl-card__title jmws-center">
     <h2 class="mdl-card__title-text">TomHartung.com</h2>
    </div>
    <div class="mdl-card__supporting-text">
-    Flask and MUI CSS
+    Django and MUI CSS
    </div>
    <div class="mdl-card__actions mdl-card--border">
     <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent"
@@ -148,7 +175,7 @@
           alt="Question marks with the text 'Your Site Here'">
     </a>
    </div>
-   <div class="mdl-card__title">
+   <div class="mdl-card__title jmws-center">
     <h2 class="mdl-card__title-text">Your Site Here</h2>
    </div>
    <div class="mdl-card__supporting-text">
