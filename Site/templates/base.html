@@ -45,16 +45,59 @@
          href="https://TomWHartung.com">Blog</a>
       <a class="mdl-navigation__link" target="_blank"
          title="Open a new window to contact the founder of JooMooWebSites.com"
-         href="https://Groja.com/conversion/tomwhartung">Contact</a>
+         href="https://Groja.com/conversion/joomoowebsites">Contact</a>
       <a class="mdl-navigation__link mdl-button mdl-js-button {{ legal_active }}"
-         id="menubtn" title="Read one of the legal documents for this site">
+         id="top-menu-button" title="Read one of the legal documents for this site">
        Legal&#x25BC;
-        <span class="visuallyhidden">show menu</span>
+        <span class="visuallyhidden">Show Legal Top Sub-menu</span>
       </a>
      </nav>
     </div>
    </header>
-   <ul class="mdl-menu mdl-js-menu" for="menubtn">
+   <ul class="mdl-menu mdl-js-menu" for="top-menu-button">
+    <li class="mdl-menu__item">
+     <a class="mdl-navigation__link"
+        title="Read the Terms of Service for this site"
+        href="/legal/terms_of_service">
+      Terms of Service</a>
+    </li>
+    <li class="mdl-menu__item">
+     <a class="mdl-navigation__link"
+        title="Read the Privacy Policy for this site"
+        href="/legal/privacy_policy">
+      Privacy Policy</a>
+    </li>
+    <li class="mdl-menu__item">
+     <a class="mdl-navigation__link"
+        title="Read the Disclosure for this site"
+        href="/legal/affiliate_marketing_disclosure">
+      Disclosure</a>
+    </li>
+   </ul>
+   <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+    <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+     <a class="mdl-navigation__link {{ home_active }}"
+        title="Go to the Home page on this site"
+        href="/">Home</a>
+     <a class="mdl-navigation__link {{ portfolio_active }}"
+        title="See a portfolio of sites built by JooMooWebSites.com"
+        href="/portfolio">Portfolio</a>
+     <a class="mdl-navigation__link {{ about_active }}"
+        title="Learn about the types of sites built by JooMooWebSites.com"
+        href="/about">About</a>
+     <a class="mdl-navigation__link" target="_blank"
+        title="Open a new window containing the blog of the site creator"
+        href="https://TomWHartung.com">Blog</a>
+     <a class="mdl-navigation__link" target="_blank"
+        title="Open a new window to contact the founder of JooMooWebSites.com"
+        href="https://Groja.com/conversion/joomoowebsites">Contact</a>
+     <a class="mdl-navigation__link mdl-js-button {{ legal_active }}"
+        id="side-menu-button" title="Read one of the legal documents for this site">
+      Legal&#x25BC;
+       <span class="visuallyhidden">Show Legal Side Sub-menu</span>
+     </a>
+    </nav>
+    <ul class="mdl-menu mdl-js-menu" for="side-menu-button">
      <li class="mdl-menu__item">
       <a class="mdl-navigation__link"
          title="Read the Terms of Service for this site"
@@ -73,28 +116,7 @@
          href="/legal/affiliate_marketing_disclosure">
        Disclosure</a>
      </li>
-   </ul>
-   <div class="mdl-layout__drawer mdl-layout--small-screen-only">
-    <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-     <a class="mdl-navigation__link {{ home_active }}"
-        title="Go to the Home page on this site"
-        href="/">Home</a>
-     <a class="mdl-navigation__link {{ portfolio_active }}"
-        title="See a portfolio of sites built by JooMooWebSites.com"
-        href="/portfolio">Portfolio</a>
-     <a class="mdl-navigation__link {{ about_active }}"
-        title="Learn about the types of sites built by JooMooWebSites.com"
-        href="/about">About</a>
-     <a class="mdl-navigation__link" target="_blank"
-        title="Open a new window containing the blog of the site creator"
-        href="https://TomWHartung.com">Blog</a>
-     <a class="mdl-navigation__link" target="_blank"
-        title="Open a new window to contact the founder of JooMooWebSites.com"
-        href="https://Groja.com/conversion/tomwhartung">Contact</a>
-     <a class="mdl-navigation__link {{ legal_active }}"
-        title="Read the Terms of Service for this site"
-        href="/legal/terms_of_service">Terms</a>
-    </nav>
+    </ul>
    </div>
   <main class="mdl-layout__content">
    {% block content %}
