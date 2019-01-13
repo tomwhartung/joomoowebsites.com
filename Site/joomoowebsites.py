@@ -64,7 +64,7 @@ def legal(legal_page):
     else:
         template_name = 'legal/terms_of_service.html'
 
-    return render_template(template_name, legal_active='active')
+    return render_template(template_name, legal_active='is-active')
 
 
 @app.route('/index')
