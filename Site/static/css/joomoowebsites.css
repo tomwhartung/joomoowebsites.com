@@ -29,7 +29,7 @@
 }
 
 .portfolio-logo {
-  background: url(/static/images/logo-jmws-joomoowebsites.com-1-white-italic.png) 50% no-repeat;
+  background: url(/static/images/site/logo-jmws-joomoowebsites.com-1-white-italic.png) 50% no-repeat;
   background-size: cover;
   height: 150px;
   width: 400px;
@@ -173,17 +173,36 @@ footer {
  *  My CusTOMizations:
  * --------------------
  */
-.jmws-about-card,
-.jmws-blog-card,
-.jmws-portfolio-card,
-.jmws-index-card,
-.jmws-legal-card,
-.jmws-versions-card {
+a {
+  color: brown;
+}
+.jmws-center {
+  align-content: center;
+  justify-content: center;
+}
+
+.jmws-legal-card {
   padding: 3em;
 }
 
+.jmws-12-col-card {
+  padding: 1em 3em 0 3em;
+}
+.jmws-8-col-card {
+  padding: 1em 2em 0 2em;
+}
+.jmws-6-col-card {
+  padding: 2em;
+}
+.jmws-4-col-card {
+  padding: 1em;
+}
+.jmws-3-col-card {
+  padding: .5em;
+}
+
 footer.jmws-footer {
-  background-color: #1565C0;
+  background-color: #5D4037;
 }
 a.footer {
   color: #E3F2FD;
