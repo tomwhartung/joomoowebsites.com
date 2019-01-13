@@ -233,8 +233,8 @@ body .demo-blog {
 .demo-blog .on-the-road-again .mdl-card__media {
   background-image: url('images/road.jpg');
 }
-.demo-blog .shopping .mdl-card__media {
-  background-image: url('images/shopping.jpg');
+.demo-blog .toms-blog .mdl-card__media {
+  background-image: url('/static/images/home/Tom_Hartung-headshot-bw-cropped-1-scaled-1.jpg');
 }
 .demo-blog .demo-blog__posts > .demo-nav {
   margin: 12px 15px;
@@ -513,9 +513,14 @@ body .demo-blog {
  * CusTOMizations
  * --------------
  */
+a.social-icon {
+  color: black;
+}
+
 div.jmws-footer-home {
   color: black;
 }
+
 a.footer-home {
   color: indigo;
 }
