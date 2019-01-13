@@ -4,7 +4,7 @@
 
 {% block content %}
  <div class="mdl-grid portfolio-max-width">
-  <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp jmws-index-card">
+  <div class="mdl-card mdl-cell mdl-cell--12-col mdl-shadow--4dp jmws-index-card">
    <div class="mdl-card__title jmws-center">
     <h2>Portfolio</h2>
    </div>
@@ -17,10 +17,10 @@
     <p>
     </p>
    </div><!-- .mdl-card__supporting-text -->
-  </div><!-- .mdl-cell -->
+  </div><!-- .mdl-card -->
 
   <!-- ArtsyVisions.com -->
-  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+  <div class="mdl-card mdl-cell mdl-cell--4-col mdl-shadow--4dp portfolio-card">
    <div class="mdl-card__media">
     <a href="{{ url_for('static', filename='images/portfolio/artsyvisions.com-1.png') }}"
        title="See a full-size screenshot in a new window or tab" target="_blank">
@@ -33,28 +33,28 @@
     <h2 class="mdl-card__title-text">ArtsyVisions.com</h2>
    </div>
    <div class="mdl-card__supporting-text">
-    Django and Materialize
+    Highlights from the image galleries at SeeOurMinds.com
    </div>
    <div class="mdl-card__supporting-text">
     <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
      <div class="mdl-tabs__tab-bar">
-      <a href="#avs-uses-panel" class="mdl-tabs__tab is-active">Uses</a>
-      <a href="#avs-details-panel" class="mdl-tabs__tab">Details</a>
+      <a href="#avs-libs-panel" class="mdl-tabs__tab is-active">Libs</a>
+      <a href="#avs-data-panel" class="mdl-tabs__tab">Data</a>
       <a href="#avs-notes-panel" class="mdl-tabs__tab">Notes</a>
      </div>
-     <div class="mdl-tabs__panel is-active" id="avs-uses-panel">
+     <div class="mdl-tabs__panel is-active" id="avs-libs-panel">
       <p>
        Django and Materialize
       </p>
      </div>
-     <div class="mdl-tabs__panel" id="avs-details-panel">
+     <div class="mdl-tabs__panel" id="avs-data-panel">
       <p>
-       Details
+       How data is stored - DB, json, etc.
       </p>
      </div>
      <div class="mdl-tabs__panel" id="avs-notes-panel">
       <p>
-       Notes
+       Notes, comments, opinions, verdict
       </p>
      </div>
     </div>
@@ -67,10 +67,10 @@
      </button>
     </a>
    </div>
-  </div><!-- .mdl-cell -->
+  </div><!-- .mdl-card -->
 
   <!-- Groja.com -->
-  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+  <div class="mdl-card mdl-cell mdl-cell--4-col mdl-shadow--4dp portfolio-card">
    <div class="mdl-card__media">
     <a href="{{ url_for('static', filename='images/portfolio/groja.com-1.png') }}"
        title="See a full-size screenshot in a new window or tab" target="_blank">
@@ -91,10 +91,10 @@
        title="Visit the home page of Groja.com">
      Visit Site</a>
    </div>
-  </div><!-- .mdl-cell -->
+  </div><!-- .mdl-card -->
 
   <!-- SeeOurMinds.com -->
-  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+  <div class="mdl-card mdl-cell mdl-cell--4-col mdl-shadow--4dp portfolio-card">
    <div class="mdl-card__media">
     <a href="{{ url_for('static', filename='images/portfolio/seeourminds.com-1.png') }}"
        title="See a full-size screenshot in a new window or tab" target="_blank">
@@ -115,10 +115,10 @@
        title="Visit the home page of SeeOurMinds.com">
      Visit Site</a>
    </div>
-  </div><!-- .mdl-cell -->
+  </div><!-- .mdl-card -->
 
   <!-- TomWHartung.com -->
-  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+  <div class="mdl-card mdl-cell mdl-cell--4-col mdl-shadow--4dp portfolio-card">
    <div class="mdl-card__media">
     <a href="{{ url_for('static', filename='images/portfolio/tomwhartung.com-1.png') }}"
        title="See a full-size screenshot in a new window or tab" target="_blank">
@@ -139,10 +139,10 @@
        title="Visit the home page of TomWHartung.com">
      Visit Site</a>
    </div>
-  </div><!-- .mdl-cell -->
+  </div><!-- .mdl-card -->
 
   <!-- TomHartung.com -->
-  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+  <div class="mdl-card mdl-cell mdl-cell--4-col mdl-shadow--4dp portfolio-card">
    <div class="mdl-card__media">
     <a href="{{ url_for('static', filename='images/portfolio/tomhartung.com-1.png') }}"
        title="See a full-size screenshot in a new window or tab" target="_blank">
@@ -163,10 +163,10 @@
        title="Visit the home page of TomHartung.com">
      Visit Site</a>
    </div>
-  </div><!-- .mdl-cell -->
+  </div><!-- .mdl-card -->
 
   <!-- Your Site Here! -->
-  <div class="mdl-cell mdl-card mdl-shadow--4dp portfolio-card">
+  <div class="mdl-card mdl-cell mdl-cell--4-col mdl-shadow--4dp portfolio-card">
    <div class="mdl-card__media">
     <a href="{{ url_for('static', filename='images/portfolio/your_site_here-1-scaled-1.png') }}"
        title="See a full-size screenshot in a new window or tab" target="_blank">
@@ -187,7 +187,7 @@
        title="Fill out a form to contact us">
      Contact Us</a>
    </div>
-  </div><!-- .mdl-cell -->
+  </div><!-- .mdl-card -->
  </div><!-- .mdl-grid -->
 {% endblock %}
 
