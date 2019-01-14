@@ -75,7 +75,10 @@ Having looked through the documentation, I am not seeing a way to do the
 following things, which are features that other MD libraries support:
 
 - Drop-down sub-menus
+  - Got this to work by using code from a cell in `material_design/08-mdl/01-blog/Site/index.html`
 - Centering text
+  - Try using new css class `jmws-center` in `joomoowebsites.css`
+  - Other ideas: https://stackoverflow.com/questions/31463632/centered-form-with-material-design-lite
 - Footer wants to have left and right sides, I want it centered and in the middle
 - Documentation is poor, e.g., does not have a list of colors
   - For a list of colors, grep for `mdl-color-text-` in the css file
