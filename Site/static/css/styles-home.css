@@ -513,6 +513,10 @@ body .demo-blog {
  * CusTOMizations
  * --------------
  */
+.jmws-home-top-card {
+  padding: 0 5em 0 0;
+}
+
 a.social-icon {
   color: black;
 }
