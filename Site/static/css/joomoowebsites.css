@@ -208,6 +208,10 @@ a.footer {
   color: #E3F2FD;
 }
 
+.about-tomh-card-full-bg {
+  background: url(/static/images/about/Tom_Hartung-headshot-color-scaled-1.jpg) center / cover;
+}
+
 /*
  * Sematic classes:
  */
