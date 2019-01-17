@@ -449,7 +449,7 @@
    </div>
   </div><!-- .mdl-card -->
 
-
+{% if include_deleted_blah_blah %}
 
   <!-- DELETE ME -->
   <div class="mdl-card mdl-cell mdl-cell--12-col mdl-shadow--4dp jmws-12-col-card">
@@ -700,6 +700,8 @@
     </p>
    </div><!-- .mdl-card__supporting-text -->
   </div><!-- .mdl-card -->
+
+{% endif %}
 
  </div><!-- .mdl-grid -->
 {% endblock %}
