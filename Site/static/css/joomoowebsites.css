@@ -237,14 +237,19 @@ a.footer {
  * but are very messed up if the list item is long and contains links,
  * like many of mine on the legal pages.
  */
-ul.toms-collection {
-  list-style-type: none;
+ul.toms-collection,
+ol.toms-collection {
   margin-left: -2.5em;
 }
-ul li.toms-collection-item {
+ul.toms-collection {
+  list-style-type: none;
+}
+ul li.toms-collection-item,
+ol li.toms-collection-item {
   border-bottom: .1em solid lightgrey;
 }
-ul li.toms-collection-item:first-child {
+ul li.toms-collection-item:first-child,
+ol li.toms-collection-item:first-child {
   border-top: .1em solid lightgrey;
 }
 
