@@ -31,8 +31,8 @@ def about():
 
     """ Render the about.html template """
 
-    #include_deleted_blah_blah = False
-    include_deleted_blah_blah = True
+    #include_deleted_blah_blah = True
+    include_deleted_blah_blah = False
 
     return render_template(
         'about.html',
