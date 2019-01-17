@@ -31,7 +31,14 @@ def about():
 
     """ Render the about.html template """
 
-    return render_template('about.html', about_active='is-active')
+    #include_deleted_blah_blah = False
+    include_deleted_blah_blah = True
+
+    return render_template(
+        'about.html',
+        about_active='is-active',
+        include_deleted_blah_blah=include_deleted_blah_blah
+    )
 
 
 @app.route('/blog')
