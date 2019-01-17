@@ -176,6 +176,7 @@ footer {
 a {
   color: brown;
 }
+
 .jmws-center {
   align-content: center;
   justify-content: center;
@@ -187,6 +188,9 @@ a {
 
 .jmws-12-col-card {
   padding: 1em 3em 0 3em;
+}
+.jmws-10-col-card {
+  padding: 1em 2.5em 0 2.5em;
 }
 .jmws-8-col-card {
   padding: 1em 2em 0 2em;
@@ -201,6 +205,9 @@ a {
   padding: .5em;
 }
 
+.jmws-icon-group {
+  margin: .25em;
+}
 footer.jmws-footer {
   background-color: #5D4037;
 }
