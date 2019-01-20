@@ -180,6 +180,10 @@ body .demo-blog {
       -ms-flex-order: 0;
           order: 0;
 }
+/*
+ * NOTE: All style definitions using class .something-else are OBSOLETE
+ * --------------------------------------------------------------------
+ */
 .demo-blog.is-small-screen .demo-blog__posts > .mdl-card.something-else {
   -webkit-order: -1;
       -ms-flex-order: -1;
@@ -229,9 +233,6 @@ body .demo-blog {
   background-color: #F5F5F5;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
-}
-.demo-blog .on-the-road-again .mdl-card__media {
-  background-image: url('images/road.jpg');
 }
 .demo-blog .toms-blog .mdl-card__media {
   background-image: url('/static/images/home/Tom_Hartung-headshot-bw-cropped-1-scaled-1.jpg');
@@ -289,6 +290,10 @@ body .demo-blog {
 .demo-blog .mdl-card h3.quote:after {
   content: '”';
 }
+/*
+ * NOTE: All style definitions using class .demo-blog--blogpost are OBSOLETE
+ * -------------------------------------------------------------------------
+ */
 .demo-blog--blogpost .custom-header {
   background-color: transparent;
 }
@@ -453,16 +458,6 @@ body .demo-blog {
 }
 .demo-blog .amazing .mdl-card__title {
   background-color: #263238;
-}
-.demo-blog .minilogo {
-  width: 44px;
-  height: 44px;
-  background-image: url('/static/images/site/logo-jmws-joomoowebsites.com-1-white-italic.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 50%;
-  border-radius: 22px;
-  background-color: #F5F5F5;
 }
 
 /* Fixes for IE 10 */
