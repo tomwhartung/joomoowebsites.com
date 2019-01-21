@@ -3,10 +3,25 @@
 
 Replacing the joomla site with flask.  Time to move on.
 
-# Goal
+# Goals
+
+## Technical Goals
 
 - Very simple site
 - Flask and MDL
+
+## Marketing Goals
+
+- Python CMSes better than legacy PHP CMSes
+- List of books that recommend WP without question:
+  - 4-Hour Workweek by Timothy Ferriss
+  - Reinventing You by Dorie Clark
+  -
+- List of sites that recommend WP without question:
+  - thesheapproach.com
+    - https://thesheapproach.com/how-to-start-blog-2018/
+  - highpayingaffiliateprograms.com
+    - https://highpayingaffiliateprograms.com/affiliate-website/
 
 # Resources
 
