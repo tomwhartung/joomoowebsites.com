@@ -13,6 +13,7 @@ Replacing the joomla site with flask.  Time to move on.
 ## Marketing Goals
 
 - Python CMSes better than legacy PHP CMSes
+
 - List of books that recommend WP without question:
   - 4-Hour Workweek by Timothy Ferriss
   - Reinventing You by Dorie Clark
@@ -22,6 +23,11 @@ Replacing the joomla site with flask.  Time to move on.
     - https://thesheapproach.com/how-to-start-blog-2018/
   - highpayingaffiliateprograms.com
     - https://highpayingaffiliateprograms.com/affiliate-website/
+
+- List of e-books that recommend WP without question:
+  - "How to Get Super Affiliate Commissions - 2015 Edition" from highpayingaffiliateprograms.com
+    - https://highpayingaffiliateprograms.com/wp-content/uploads/2018/07/SuperAffiliateGuide2016.pdf
+    - Also: `affiliate_marketing/downloads/SuperAffiliateGuide2016.pdf` in the `jmws_accoutrements` repo
 
 # Resources
 
