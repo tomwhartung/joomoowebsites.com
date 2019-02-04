@@ -16,6 +16,7 @@ Replacing the joomla site with flask.  Time to move on.
 
 - List of books that recommend WP without question:
   - 4-Hour Workweek by Timothy Ferriss
+    - p. 191, under Tools and Tricks
   - Reinventing You by Dorie Clark
   -
 - List of sites that recommend WP without question:
